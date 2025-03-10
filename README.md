@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python script extracts text data from PDF files by converting them into images and then using Optical Character Recognition (OCR) with `pytesseract`. The script is particularly designed to process historical documents that contain names and places in a two-column format.
+This Python script extracts text data from old PDF books by converting them into images and then using Optical Character Recognition (OCR) with `pytesseract`. The script is particularly designed to process historical documents that contain names and places in a two-column format.
 
 ## Features
 
@@ -50,7 +50,7 @@ This saves images of the specified pages in a folder.
 convert_images_to_dataframe('path/to/image/folder')
 ```
 
-This extracts names and places from images and saves them as a CSV file.
+This extracts names and places from images and saves them as a CSV file. The options are set to meet the requirements for extracting data from an image with two columns of data.
 
 ### 4. Process Verified Page Ranges
 
@@ -76,7 +76,7 @@ project-folder/
 │   ├── example_folder/
 │   │   ├── page_1.jpg
 │   │   ├── page_2.jpg
-│── script.py
+│── book_convertor.py
 │── output.log
 │── extracted_data.csv
 ```
