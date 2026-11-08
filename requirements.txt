@@ -1,0 +1,8 @@
+# Third-party Python packages imported by book_convertor.py.
+# Versions were not recorded; pin them once a working set is confirmed.
+# Tesseract-OCR must also be installed separately (see README).
+pytesseract
+Pillow
+pandas
+pdf2image
+PyPDF2

@@ -81,6 +81,26 @@ project-folder/
 │── extracted_data.csv
 ```
 
+## Requirements
+
+The third-party Python packages imported by `book_convertor.py` are `pytesseract`, `Pillow`, `pandas`, `pdf2image` and `PyPDF2`. They are listed in `requirements.txt`:
+
+```sh
+pip install -r requirements.txt
+```
+
+Tesseract-OCR must be installed separately (see Prerequisites). `convert_images_to_dataframe()` calls Tesseract with the French language model (`lang='fra'`), so the French language data must also be installed.
+
+## Data
+
+- **Inputs:** scanned PDF books placed in a `books/` folder (`books/*.pdf`). The main block processes files whose names contain the ranges `1928-31`, `1930-35`, `1934-37` or `1937-40`. `convert_page_range_to_dataframes()` also needs a hand-made `<pdf_name>_human_verified.txt` file listing page ranges.
+- **Source:** the origin of the PDF books is not recorded in this repository.
+- **Not in the repository:** no PDFs, page images, page-range files or output CSVs are included. Outputs (page images and CSV files of extracted names and places) are created locally. `.gitignore` excludes `.csv` files.
+
+## Running time
+
+Not recorded.
+
 ## Author
 
 Mahyar Rezazadeh
